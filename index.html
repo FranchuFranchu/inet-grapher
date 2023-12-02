@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/svg.js/3.2.0/svg.min.js" integrity="sha512-EmfT33UCuNEdtd9zuhgQClh7gidfPpkp93WO8GEfAP3cLD++UM1AG9jsTUitCI9DH5nF72XaFePME92r767dHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script type="text/javascript" src="parse.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+	<style type="text/css">
+		body {
+			display: grid; 
+			grid-auto-columns: 1fr; 
+			grid-auto-rows: 1fr; 
+			grid-template-columns: 1fr; 
+			grid-template-rows: 100px 1fr; 
+			gap: 0px 0px; 
+			grid-template-areas: 
+			"."
+			"."; 
+		}
+		html{
+			margin: 0px;
+			width: 100%;
+			height: 100%;
+		}
+		body {
+			width: calc(100% - 20px);
+			height: calc(100% - 20px);
+			margin: 10px;
+		}
+		#svg-container {
+			overflow:scroll;
+			border: 1px solid black;
+		}
+		#error-message {
+			color: red;
+		}
+		input {
+			background-color: white;
+			border: 1px solid gray;
+			border-radius: 2px;
+		}
+		input:focus {
+			outline: 2px solid inherit;
+			outline-
+		}
+		#code-input.error {
+			background-color: pink;
+		}
+	</style>
+</head>
+<body>
+	<div style="overflow: scroll">
+		
+	<h4>Inet graphing tool</h4>
+	<textarea type="" name="" id="code-input"></textarea>
+	<span id="error-message"></span>
+	<button id="share-button">Share</button>
+	</div>
+	<div id="svg-container">
+	</div>
+</body>
+</html>
