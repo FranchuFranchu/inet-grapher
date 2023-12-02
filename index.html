@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/svg.js/3.2.0/svg.min.js" integrity="sha512-EmfT33UCuNEdtd9zuhgQClh7gidfPpkp93WO8GEfAP3cLD++UM1AG9jsTUitCI9DH5nF72XaFePME92r767dHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<link href="https://fonts.cdnfonts.com/css/libertinus-mono" rel="stylesheet">
 	<script type="text/javascript" src="parse.js"></script>
 	<script type="text/javascript" src="main.js"></script>
 	<style type="text/css">
@@ -13,7 +14,7 @@
 			grid-auto-columns: 1fr; 
 			grid-auto-rows: 1fr; 
 			grid-template-columns: 1fr; 
-			grid-template-rows: 100px 1fr; 
+			grid-template-rows: 200px 1fr; 
 			gap: 0px 0px; 
 			grid-template-areas: 
 			"."
@@ -36,14 +37,19 @@
 		#error-message {
 			color: red;
 		}
-		input {
+		textarea {
 			background-color: white;
 			border: 1px solid gray;
 			border-radius: 2px;
+			font-family: 'monospace', sans-serif;
 		}
-		input:focus {
+		textarea:focus {
 			outline: 2px solid inherit;
 			outline-
+		}
+		#code-input {
+			height: 100px;
+			width: 300px;
 		}
 		#code-input.error {
 			background-color: pink;

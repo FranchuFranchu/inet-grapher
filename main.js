@@ -1,5 +1,5 @@
 window.Tool = {}
-Tool.label_font = {family: 'monospace', size: 4}
+Tool.label_font = {family: 'Libertinus Mono', size: 4}
 
 function default_if_undefined(x, d) {
 	if (x === undefined) {
